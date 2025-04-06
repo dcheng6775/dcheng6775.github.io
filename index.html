@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Calculator</title>
+<style>
+body {
+background-color: black;
+}
+.titlepage {
+font-family: Calibri;
+color: white;
+height: 50px;
+font-size: 40px;
+}
+.number-button {
+font-family: Calibri;
+height: 50px;
+width: 50px;
+border-radius: 25px;
+background-color: grey;
+border: none;
+color: white;
+font-size: 30px;
+cursor: pointer;
+font-weight: bold;
+}
+
+.clear-button {
+font-family: Calibri;
+height: 50px;
+width: 50px;
+border-radius: 25px;
+background-color: grey;
+border: none;
+color: white;
+cursor: pointer;
+font-weight: bold;
+
+}
+
+.operator-button {
+font-family: Calibri;
+height: 50px;
+width: 50px;
+border-radius: 25px;
+background-color: orange;
+border: none;
+color: white;
+font-size: 30px;
+cursor: pointer;
+font-weight: bold;
+}
+</style>
+</head>
+<body>
+<h1 class="js-title titlepage"></h1>
+<p>
+<button onclick="
+document.querySelector('.js-title').innerHTML += 1
+" class="number-button">1</button>
+<button onclick="
+document.querySelector('.js-title').innerHTML += 2
+" class="number-button">2</button>
+<button onclick="
+document.querySelector('.js-title').innerHTML += 3
+" class="number-button">3</button>
+<button onclick="
+document.querySelector('.js-title').innerHTML += '+'
+" class="operator-button">+</button>
+
+</p>
+<p>
+<button onclick="
+document.querySelector('.js-title').innerHTML += 4
+" class="number-button">4</button>
+<button onclick="
+document.querySelector('.js-title').innerHTML += 5
+" class="number-button">5</button>
+<button onclick="
+document.querySelector('.js-title').innerHTML += 6
+"class="number-button">6</button>
+<button onclick="
+document.querySelector('.js-title').innerHTML += '-'
+" class="operator-button">-</button>
+
+</p>
+<p>
+<button onclick="
+document.querySelector('.js-title').innerHTML += 7
+" class="number-button">7</button>
+<button onclick="
+document.querySelector('.js-title').innerHTML += 8
+" class="number-button">8</button>
+<button onclick="
+document.querySelector('.js-title').innerHTML += 9
+" class="number-button">9</button>
+<button onclick="
+document.querySelector('.js-title').innerHTML += '*'
+" class="operator-button">x</button>
+
+</p>
+<p>
+<button onclick="
+document.querySelector('.js-title').innerHTML += 0
+" class="number-button">0</button>
+<button onclick="
+document.querySelector('.js-title').innerHTML += '.'
+" class="number-button">.</button>
+<button onclick="
+document.querySelector('.js-title').innerHTML = eval(document.querySelector('.js-title').innerHTML)
+" class="number-button">=</button>
+<button onclick="
+document.querySelector('.js-title').innerHTML += '/'
+" class="operator-button">÷</button>
+
+</p>
+<p>
+<button onclick="
+document.querySelector('.js-title').innerHTML = ''
+" class="clear-button">Clear</button>
+</p>
+
+</body>
+</html>
